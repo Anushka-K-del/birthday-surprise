@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090714">
+
+    <title>For My Maa ♡</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         BACKGROUND
+    ====================================================== -->
+
+    <div class="noise"></div>
+
+    <div class="stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="particles"></div>
+
+    <!-- =====================================================
+         MUSIC
+    ====================================================== -->
+
+    <audio id="birthdayMusic" loop>
+        <source src="assets/birthday-song.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =====================================================
+         SCENE 1 — OPENING
+    ====================================================== -->
+
+    <section id="opening" class="scene active">
+
+        <div class="opening-content">
+
+            <p class="tiny-label">
+                A LITTLE SOMETHING FOR SOMEONE VERY SPECIAL
+            </p>
+
+            <div class="sparkle-title">
+                <span>For</span>
+                <h1>My Maa</h1>
+                <span class="heart">♡</span>
+            </div>
+
+            <p class="opening-text">
+                There's a little world I made for you...
+            </p>
+
+            <button class="main-btn" id="openBtn">
+                <span>Open your surprise</span>
+                <span class="arrow">→</span>
+            </button>
+
+            <p class="scroll-note">
+                made with all my love
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 2 — HAPPY BIRTHDAY
+    ====================================================== -->
+
+    <section id="birthday" class="scene">
+
+        <div class="birthday-glow"></div>
+
+        <div class="birthday-content">
+
+            <p class="eyebrow">
+                TODAY IS ALL ABOUT YOU
+            </p>
+
+            <h2 class="birthday-title">
+                Happy Birthday
+                <span> Maa ♡</span>
+            </h2>
+
+            <div class="birthday-line"></div>
+
+            <p class="birthday-subtitle">
+                To the woman who makes every ordinary day
+                feel like home.
+            </p>
+
+            <div class="floating-balloons">
+
+                <div class="balloon balloon-one">♡</div>
+                <div class="balloon balloon-two">✦</div>
+                <div class="balloon balloon-three">♡</div>
+                <div class="balloon balloon-four">✧</div>
+
+            </div>
+
+            <button class="text-btn" id="memoriesBtn">
+                Let's look at some memories
+                <span>↓</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 3 — MEMORIES
+    ====================================================== -->
+
+    <section id="memories" class="scene">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                LITTLE MOMENTS, BIG MEMORIES
+            </p>
+
+            <h2>
+                Pieces of
+                <span>us</span>
+            </h2>
+
+            <p>
+                Some moments are too precious
+                to fit into words.
+            </p>
+
+        </div>
+
+
+        <div class="memory-container">
+
+            <div class="polaroid polaroid-one">
+                <div class="photo-wrapper">
+                    <img src="assets/mom1.jpg" alt="Memory 1">
+                </div>
+
+                <p>My favourite person ♡</p>
+            </div>
+
+
+            <div class="polaroid polaroid-two">
+                <div class="photo-wrapper">
+                    <img src="assets/mom2.jpg" alt="Memory 2">
+                </div>
+
+                <p>Where love feels like home</p>
+            </div>
+
+
+            <div class="polaroid polaroid-three">
+                <div class="photo-wrapper">
+                    <img src="assets/mom3.jpg" alt="Memory 3">
+                </div>
+
+                <p>Always my safe place</p>
+            </div>
+
+
+            <div class="polaroid polaroid-four">
+                <div class="photo-wrapper">
+                    <img src="assets/mom4.jpg" alt="Memory 4">
+                </div>
+
+                <p>Forever grateful ♡</p>
+            </div>
+
+        </div>
+
+
+        <button class="main-btn memory-next" id="celebrateBtn">
+            <span>Let's celebrate</span>
+            <span class="arrow">→</span>
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 4 — DECORATION
+    ====================================================== -->
+
+    <section id="decoration" class="scene">
+
+        <div class="decor-bg">
+
+            <div class="string-lights">
+
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+
+            </div>
+
+            <div class="decor-balloons">
+
+                <div class="decor-balloon b1"></div>
+                <div class="decor-balloon b2"></div>
+                <div class="decor-balloon b3"></div>
+                <div class="decor-balloon b4"></div>
+                <div class="decor-balloon b5"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="decoration-content">
+
+            <p class="eyebrow">
+                WAIT...
+            </p>
+
+            <h2>
+                We need to
+                <span>decorate!</span>
+            </h2>
+
+            <p id="decorateText">
+                Give me a second...
+            </p>
+
+            <button class="main-btn" id="decorateBtn">
+                <span>Start decorating</span>
+                <span>✦</span>
+            </button>
+
+        </div>
+
+
+        <button class="hidden-next" id="cakeBtn">
+            Bring the cake 🎂 →
+        </button>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 5 — CAKE
+    ====================================================== -->
+
+    <section id="cakeScene" class="scene">
+
+        <div class="cake-stars"></div>
+
+        <div class="cake-intro">
+
+            <p class="eyebrow">
+                AND NOW...
+            </p>
+
+            <h2>
+                The most important
+                <span>part.</span>
+            </h2>
+
+            <button class="main-btn" id="bringCakeBtn">
+                Bring the cake
+                <span>🍰</span>
+            </button>
+
+        </div>
+
+
+        <div class="cake-area">
+
+            <div class="cake-glow"></div>
+
+            <!-- CAKE -->
+            <div class="cake">
+
+                <div class="candle candle-one">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-two">
+                    <div class="flame"></div>
+                </div>
+
+                <div class="candle candle-three">
+                    <div class="flame"></div>
+                </div>
+
+
+                <div class="cake-top">
+
+                    <div class="cream cream-one"></div>
+                    <div class="cream cream-two"></div>
+                    <div class="cream cream-three"></div>
+
+                </div>
+
+                <div class="cake-body">
+
+                    <div class="cake-drip drip-one"></div>
+                    <div class="cake-drip drip-two"></div>
+                    <div class="cake-drip drip-three"></div>
+
+                </div>
+
+                <div class="cake-bottom"></div>
+
+            </div>
+
+
+            <p class="cake-message">
+                One cake.
+                One wish.
+                One very special person.
+            </p>
+
+
+            <button class="wish-btn" id="wishBtn">
+                Make a wish ✨
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 6 — CANDLE
+    ====================================================== -->
+
+    <section id="candleScene" class="scene">
+
+        <div class="candle-content">
+
+            <p class="eyebrow">
+                CLOSE YOUR EYES & MAKE A WISH
+            </p>
+
+            <h2>
+                Ready?
+            </h2>
+
+            <p class="candle-instruction">
+                Blow the candles out...
+                <br>
+                <span>or tap the button below ♡</span>
+            </p>
+
+            <div class="big-cake">
+
+                <div class="big-candle candle-a">
+                    <div class="big-flame"></div>
+                </div>
+
+                <div class="big-candle candle-b">
+                    <div class="big-flame"></div>
+                </div>
+
+                <div class="big-candle candle-c">
+                    <div class="big-flame"></div>
+                </div>
+
+
+                <div class="big-cake-top"></div>
+                <div class="big-cake-middle"></div>
+                <div class="big-cake-bottom"></div>
+
+            </div>
+
+
+            <button class="blow-btn" id="blowBtn">
+                💨 Blow the candles
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SCENE 7 — FINAL
+    ====================================================== -->
+
+    <section id="finalScene" class="scene">
+
+        <div id="confetti"></div>
+
+        <div class="final-glow"></div>
+
+        <div class="final-content">
+
+            <p class="eyebrow">
+                AND JUST LIKE THAT...
+            </p>
+
+            <h2 class="final-title">
+                HAPPY
+                <span>BIRTHDAY</span>
+                MAA!
+            </h2>
+
+            <div class="final-photo">
+
+                <div class="photo-shine"></div>
+
+                <img src="assets/mom1.jpg"
+                     alt="My beautiful Maa">
+
+            </div>
+
+
+            <div class="love-message">
+
+                <p>
+                    Thank you for every hug,
+                    every sacrifice,
+                    every little thing you do.
+                </p>
+
+                <p>
+                    You have been my comfort,
+                    my strength,
+                    and my home.
+                </p>
+
+                <strong>
+                    I love you, Maa. ♡
+                </strong>
+
+            </div>
+
+
+            <button class="music-btn" id="musicBtn">
+                ♫ Play our song
+            </button>
+
+            <p class="ending">
+                Made with infinite love ♡
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
